@@ -6,9 +6,16 @@ var App = () => (
 
 );
 
-var GroceryListItem = (props) => (
-	<li>{props.item}</li>
-)
+class GroceryListItem extends React.Component {
+	constructor(props){
+		super(props);
+	}
+	render(){
+		return(
+	<li>{this.props.item}</li>);
+	}
+}
+
 
 var GroceryList = (props) => (
 	<ul>
